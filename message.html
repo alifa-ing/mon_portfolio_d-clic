@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Consultation des messages du portfolio de Philippe ALIFA">
+    <title>Messages | Philippe ALIFA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                PHILIPPE <span>ALIFA</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="skills.html">Compétences</a>
+                <a href="projects.html">Projets</a>
+                <a href="contact.html">Contact</a>
+                <a href="messages.html" class="active">
+                    Messages
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <p class="section-tag">
+                    ESPACE DE CONSULTATION
+                </p>
+                <h1>Messages reçus</h1>
+                <p>
+                    Consultez les messages enregistrés à partir
+                    du formulaire de contact.
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-tag">
+                        BOÎTE DE RÉCEPTION LOCALE
+                    </p>
+                    <h2>Liste des messages</h2>
+                    <p>
+                        Les messages affichés sont enregistrés
+                        dans le stockage local de ce navigateur.
+                    </p>
+                </div>
+
+                <!-- Les messages seront affichés ici -->
+                <div id="listeMessages"
+                     class="messages-container">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy;
+                <span id="annee"></span>
+                Philippe ALIFA. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

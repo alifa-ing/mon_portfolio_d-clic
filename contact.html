@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Informations générales de la page -->
+    <meta charset="UTF-8">
+    <!-- Adaptation aux écrans mobiles et tablettes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description de la page -->
+    <meta name="description"
+        content="Contactez Philippe ALIFA pour vos projets informatiques, numériques et de gestion de projet.">
+    <!-- Titre de la page -->
+    <title>Contact | Philippe ALIFA</title>
+    <!-- Liaison avec le fichier CSS principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. EN-TÊTE DU SITE -->
+    <header class="header">
+        <!-- Logo du portfolio -->
+        <div class="logo">
+            <a href="index.html">
+                PHILIPPE ALIFA
+            </a>
+        </div>
+
+        <!-- Menu de navigation principal -->
+        <nav class="navbar" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        À propos
+                    </a>
+                </li>
+                <li>
+                    <a href="skills.html">
+                        Compétences
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        Projets
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" aria-current="page">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENU PRINCIPAL -->
+    <main>
+        <!-- 2.1. INTRODUCTION -->
+        <section class="section page-introduction">
+            <div class="section-heading">
+                <p class="section-label">
+                    RESTONS EN CONTACT
+                </p>
+                <h1>
+                    Contactez-moi
+                </h1>
+                <p>
+                    Vous avez une question, une proposition de collaboration
+                    ou un projet numérique ? Vous pouvez me contacter
+                    à travers les coordonnées suivantes ou le formulaire.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2.2. INFORMATIONS DE CONTACT -->
+        <section class="section contact-section">
+            <div class="section-heading">
+                <h2>
+                    Mes coordonnées
+                </h2>
+                <p>
+                    Je reste disponible pour échanger sur vos besoins
+                    professionnels et vos projets.
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Adresse e-mail -->
+                <article class="card contact-card">
+                    <h3>
+                        Adresse e-mail
+                    </h3>
+                    <p>
+                        Vous pouvez m'envoyer un message par e-mail.
+                    </p>
+                    <a href="mailto:philipalifa.tpa@gmail.com">
+                        philipalifa.tpa@gmail.com
+                    </a>
+                </article>
+
+                <!-- Téléphone -->
+                <article class="card contact-card">
+                    <h3>
+                        Téléphone
+                    </h3>
+                    <p>
+                        Contact téléphonique professionnel.
+                    </p>
+                    <a href="tel:+23568159535">
+                        +235 68 15 95 35
+                    </a>
+                </article>
+
+                <!-- WhatsApp -->
+                <article class="card contact-card">
+                    <h3>
+                        WhatsApp
+                    </h3>
+                    <p>
+                        Échangez directement avec moi sur WhatsApp.
+                    </p>
+                    <a href="https://wa.me/23593515228" target="_blank" rel="noopener noreferrer">
+                        Ouvrir WhatsApp
+                    </a>
+                </article>
+
+                <!-- LinkedIn -->
+                <article class="card contact-card">
+                    <h3>
+                        LinkedIn
+                    </h3>
+                    <p>
+                        Consultez mon profil professionnel.
+                    </p>
+                    <a href="https://linkedin.com/in/philippe-alifa-65577329b" target="_blank" rel="noopener noreferrer">
+                        Voir mon profil
+                    </a>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- 2.3. FORMULAIRE DE CONTACT -->
+        <section class="section form-section">
+            <div class="section-heading">
+                <h2>
+                    Envoyez-moi un message
+                </h2>
+                <p>
+                    Remplissez les champs ci-dessous. Les champs marqués
+                    d'un astérisque sont obligatoires.
+                </p>
+            </div>
+
+            <!--
+                Le formulaire sera traité avec JavaScript.
+                Pour le moment, aucune donnée n'est envoyée
+                vers un serveur distant.
+            -->
+            <form id="contactForm" class="contact-form" novalidate>
+                <!-- CHAMP NOM -->
+                <div class="form-group">
+                    <label for="nom">
+                        Nom complet :
+                    </label>
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Exemple : Jean Mahamat"
+                        required
+                        autocomplete="name">
+                    <!-- Message d'erreur du champ nom -->
+                    <small id="nomErreur" class="form-error"></small>
+                </div>
+
+
+                <!-- CHAMP E-MAIL -->
+                <div class="form-group">
+                    <label for="email">
+                        Adresse e-mail :
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Exemple : jean@email.com"
+                        required
+                        autocomplete="email">
+                    <!-- Message d'erreur du champ e-mail -->
+                    <small id="emailErreur" class="form-error"></small>
+                </div>
+
+                <!-- CHAMP OBJET -->
+                <div class="form-group">
+                    <label for="objet">
+                        Objet du message :
+                    </label>
+                    <input
+                        type="text"
+                        id="objet"
+                        name="objet"
+                        placeholder="Exemple : Proposition de collaboration"
+                        required>
+                    <!-- Message d'erreur du champ objet -->
+                    <small id="objetErreur" class="form-error"></small>
+                </div>
+
+
+                <!-- CHAMP MESSAGE -->
+                <div class="form-group">
+                    <label for="message">
+                        Votre message :
+                    </label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Écrivez votre message ici..."
+                        required></textarea>
+                    <!-- Message d'erreur du champ message -->
+                    <small id="messageErreur" class="form-error"></small>
+                </div>
+
+                <!-- Zone d'affichage du résultat -->
+                <div id="formMessage" class="form-message" role="status">
+                </div>
+
+                <!-- Bouton d'envoi -->
+                <button type="submit" class="btn btn-primary">
+                    Envoyer le message
+                </button>
+
+                <!-- Bouton de réinitialisation -->
+                <button type="reset" class="btn btn-secondary">
+                    Effacer
+                </button>
+            </form>
+        </section>
+
+
+        <!-- 2.4. INFORMATIONS IMPORTANTES -->
+        <section class="section information-section">
+            <div class="section-heading">
+                <h2>
+                    Information sur le formulaire
+                </h2>
+                <p>
+                    Ce formulaire est actuellement une interface
+                    de démonstration. La validation sera effectuée
+                    avec JavaScript.
+                </p>
+                <p>
+                    Une sauvegarde locale pourra être ajoutée pour
+                    conserver les messages sur le navigateur utilisé.
+                    Pour recevoir réellement les messages en ligne,
+                    un serveur ou un service de traitement de formulaire
+                    sera nécessaire.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2.5. APPEL À L'ACTION -->
+        <section class="section cta-section">
+            <div class="cta-content">
+                <h2>
+                    Construisons une solution ensemble
+                </h2>
+                <p>
+                    Discutons de vos besoins en informatique,
+                    en formation ou en gestion de projet.
+                </p>
+                <a href="projects.html" class="btn btn-primary">
+                    Découvrir mes projets
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- 3. PIED DE PAGE -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Présentation du portfolio -->
+            <div class="footer-brand">
+                <h2>
+                    PHILIPPE ALIFA
+                </h2>
+                <p>
+                    Gestionnaire de Projet | Ingénieur en Informatique
+                </p>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="footer-links">
+                <h3>
+                    Liens rapides
+                </h3>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            À propos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="skills.html">
+                            Compétences
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html">
+                            Projets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Coordonnées -->
+            <div class="footer-contact">
+                <h3>
+                    Contact
+                </h3>
+                <p>
+                    Email :
+                    <a href="mailto:philipalifa.tpa@gmail.com">
+                        philipalifa.tpa@gmail.com
+                    </a>
+                </p>
+                <p>
+                    Téléphone :
+                    <a href="tel:+23568159535">
+                        +235 68 15 95 35
+                    </a>
+                </p>
+                <p>
+                    WhatsApp :
+                    <a href="https://wa.me/23593515228"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Me contacter sur WhatsApp
+
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="social-links">
+            <a href="https://linkedin.com/in/philippe-alifa-65577329b" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+            <a href="https://www.facebook.com/philip.alifa.98" aria-label="Facebook">
+                Facebook
+            </a>
+            <a href="https://www.instagram.com/philip.alifa98/" aria-label="Instagram">
+                Instagram
+            </a>
+            <a href="https://studio.youtube.com/channel/UCODXy73CHc1AhnGASCOPeVA/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" aria-label="YouTube">
+                YouTube
+            </a>
+            <a href="https://www.goafricaonline.com/td/user/514411-philippe-alifa" aria-label="Go Africa">
+                Go Africa
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="annee"></span> Philippe ALIFA.
+                Tous droits réservés.
+            </p>
+        </div>
+
+    </footer>
+    <!-- Liaison avec le fichier JavaScript -->
+    <script src="app.js" defer></script>
+
+</body>
+
+</html>
